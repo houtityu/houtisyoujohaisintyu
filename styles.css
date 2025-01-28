@@ -6,11 +6,6 @@
 }
 
 body {
-    font-family: 'riitnr';
-    src: url('riitnr.RiiTN_R') format('RiiTN_R');
-    font-weight: normal;
-    font-style: normal;
-    line-height: ;
     color: #333;
     background-color: #333;
 }
@@ -84,7 +79,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 4rem 20px;
-    background-color: #fff;
+    background: url('hero-bg.jpg');
 }
 
 .feature {
