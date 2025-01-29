@@ -47,7 +47,7 @@ nav {
 
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #333;
     height: 100vh;
     display: flex;
     flex-direction: column;
