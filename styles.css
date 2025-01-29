@@ -6,7 +6,7 @@
 }
 
 body {
-    color: #fff;
+    
     background-color: #f4f4f4;
 }
 
@@ -26,6 +26,7 @@ nav {
 }
 
 .logo {
+    color: #333;
     font-size: 2.0rem;
     font-weight: bold;
 }
@@ -40,7 +41,7 @@ nav {
 }
 
 .nav-links a {
-    color: #808080;
+    color: #8a8a8a;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -67,21 +68,12 @@ nav {
     margin-bottom: 2rem;
 }
 
-.cta {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
 
 .features {
     display: flex;
     justify-content: space-around;
     padding: 4rem 20px;
-    color: #fff;
-    background-color: #a9a9a9;
+    background-color: #fff;
 }
 
 .feature {
