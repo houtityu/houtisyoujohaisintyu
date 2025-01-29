@@ -40,14 +40,24 @@ nav {
 }
 
 .nav-links a {
-    color: #8a8a8a;
+    color: #808080;
     text-decoration: none;
     font-size: 1rem;
 }
 
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background-color: #f4f4f4;
     color: #333;
+    .original-text-shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #000000;
+  font-size: 50px;
+  text-shadow: 0px 20px 8px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -79,7 +89,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 4rem 20px;
-    background: url('hero-bg.jpg');
+    background: #8a8a8a;
 }
 
 .feature {
