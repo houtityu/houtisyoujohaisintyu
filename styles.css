@@ -57,7 +57,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 1px 1px 3px #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
