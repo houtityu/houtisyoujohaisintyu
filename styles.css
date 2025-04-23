@@ -50,7 +50,7 @@ nav {
 }
 
 .hero {
-    color: #333;
+    color: black;
     height: 100vh;
     display: flex;
     flex-direction: column;
