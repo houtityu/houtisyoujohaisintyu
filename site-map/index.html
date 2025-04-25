@@ -5,7 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サイトマップ | 放置少女配信中</title>
     <meta name="description" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+.sitemap-container {
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.sitemap-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.sitemap-section h2 {
+    font-size: 1.4rem;
+    color: #27b76a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.sitemap-section a {
+    color: #27b76a;
+    text-decoration: none;
+}
+
+.sitemap-section a:hover {
+    text-decoration: underline;
+}
+
+.sitemap-links {
+    list-style-type: none;
+}
+
+.sitemap-links li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.sitemap-links li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #27b76a;
+}
+
+.sitemap-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 3px 0;
+}
+
+.sitemap-links a:hover {
+    color: #27b76a;
+    text-decoration: underline;
+}
+
+.sitemap-section {
+    /* 既存のスタイルはそのままに */
+    transition: all 0.3s ease-in-out; /* アニメーション追加 */
+    transform: translateY(0); /* 初期位置 */
+}
+
+/* ホバー時のエフェクト */
+.sitemap-section:hover {
+    transform: translateY(-5px); /* 上に5px浮き上がる */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 影を強調 */
+    opacity: 0.95; /* 軽くフェード */
+}
+
+/* よりドラマチックなフェードイン効果を追加 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* セクションごとに遅延を設定 */
+.sitemap-section:nth-child(1) { animation-delay: 0.1s; }
+.sitemap-section:nth-child(2) { animation-delay: 0.2s; }
+.sitemap-section:nth-child(3) { animation-delay: 0.3s; }
+.sitemap-section:nth-child(4) { animation-delay: 0.4s; }
+.sitemap-section:nth-child(5) { animation-delay: 0.5s; }
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -18,26 +115,32 @@
         </nav>
     </header>
         
+    <h1 style="color: rgb(40, 186, 138); margin: 2rem 50px;">サイトマップ</h1>
+
     <main class="sitemap-container">
         
         <section class="sitemap-section">
             <h2><a href="../index.html">ホーム</a></h2>
-                <p>特に書くこともないけどさみしい</p>
+                <p>特に書くこともないけどなんだか物寂しい</p>
         </section>
         
         <section class="sitemap-section">
-            <h2><a href="#">おすすめブログ</a></h2>
+            <h2><a href="../blogs/index.html">おすすめブログ</a></h2>
             <ul class="sitemap-links">
                 <li><a href="https://houtityu.hatenablog.com/entry/2025/02/10/122717?_gl=1*1q3va0r*_gcl_au*MTU0NDU2MjY0My4xNzQwODAwNjg3" target="_blank">僕はドジでダサくてどんくさい</a></li>
                 <li><a href="https://houtityu.hatenablog.com/entry/2025/01/22/113542?_gl=1*1jxa1cn*_gcl_au*MTU0NDU2MjY0My4xNzQwODAwNjg3" target="_blank">あけましておめでとうございます（1/22）</a></li>
-                <li><a href="#">...もっと見る</a></li>
+                <li><a href="../blogs/index.html">...もっと見る</a></li>
             </ul>
+        </section>
+        
+        <section class="sitemap-section">
+            <h2><a href="#">デュエプレ</a></h2>
         </section>
         
     </main>
     
-    <footer class="sitemap-footer">
-        <p>&copy; 2025 放置少女配信中. All Rights Reserved.</p>
+    <footer>
+        <p><small>&copy; 2025 放置少女配信中. All Rights Reserved.</small></p>
     </footer>
 </body>
 </html> 
