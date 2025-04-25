@@ -79,17 +79,36 @@
 }
 
 .picture {
-    width: 320px;
+    width: 100%;
     aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .expression {
     border-top: 2px solid #f0f0f0;
     padding-top: 1rem;
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    min-height: 60px; /* 最低高さを指定 */
+    margin: 0; /* デフォルトのマージンをリセット */
 }
 
+.blogs-section a {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 親要素いっぱいに広げる */
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogs-section {
+    /* 既存スタイルに追加 */
+    display: flex;
+    flex-direction: column;
+}
     </style>
 </head>
+
 <body>
     <header>
         <nav>
