@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おすすめブログ | 放置少女配信中</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+    
+    .blogs-container {
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blogs-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.blogs-section h2 {
+    font-size: 1.4rem;
+    color: #27b76a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.blogs-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.blogs-section a:hover {
+    text-decoration: none;
+}
+
+
+
+    .blogs-section {
+    /* 既存のスタイルはそのままに */
+    transition: all 0.3s ease-in-out; /* アニメーション追加 */
+    transform: translateY(0); /* 初期位置 */
+}
+
+/* ホバー時のエフェクト */
+.blogs-section:hover {
+    transform: translateY(-5px); /* 上に5px浮き上がる */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 影を強調 */
+    opacity: 0.95; /* 軽くフェード */
+}
+
+/* よりドラマチックなフェードイン効果を追加 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* セクションごとに遅延を設定 */
+.blogs-section:nth-child(1) { animation-delay: 0.1s; }
+.blogs-section:nth-child(2) { animation-delay: 0.2s; }
+.blogs-section:nth-child(3) { animation-delay: 0.3s; }
+.blogs-section:nth-child(4) { animation-delay: 0.4s; }
+.blogs-section:nth-child(5) { animation-delay: 0.5s; }
+
+.blogs-section {
+    color: #333;
+}
+
+.picture {
+    width: 320px;
+    aspect-ratio: 16/9;
+}
+
+.expression {
+    border-top: 2px solid #f0f0f0;
+    padding-top: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../images/title.png" width="300" height="130" alt="logo"></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="../site-map/index.html">サイトマップ</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <h1 style="color: rgb(40, 186, 138); margin: 2rem 50px;">おすすめブログ</h1>
+
+    <main class="blogs-container">
+        
+        <section class="blogs-section">
+        <a href="https://houtityu.hatenablog.com/entry/2025/02/10/122717?_gl=1*1q3va0r*_gcl_au*MTU0NDU2MjY0My4xNzQwODAwNjg3" target="_blank">
+            <h2>僕はドジでダサくてどんくさい</h2>
+                <p><img src="images/正面クラフト.png" alt="ホバークラフト" class="picture"></p>
+                <p class="expression">盛大に転んで笑いものになった話</p>
+            </a>
+        </section>
+
+        <section class="blogs-section">
+            <a href="https://houtityu.hatenablog.com/entry/2025/02/10/122717?_gl=1*1q3va0r*_gcl_au*MTU0NDU2MjY0My4xNzQwODAwNjg3" target="_blank">
+                <h2>あけましておめでとうございます(1/22)</h2>
+                <p><img src="images/225.png" alt="あけましておめでとう" class="picture"></p>
+                <p class="expression">今年の抱負とかいろいろ</p>
+             </a>
+        </section>
+              
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 放置少女配信中. All Rights Reserved.</p>
+    </footer>
+</body>
+</html> 
